@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="icon" href="data:image/png;base64,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">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo">
+        <img src="images/logo.png" alt="">
+    </a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#menu">menu</a>
+        <a href="#products">products</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+        <a href="#blogs">blogs</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
+
+    <div class="cart-items-container">
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/cart-item-1.png" alt="">
+            <div class="content">
+                <h3>cart item 01</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/cart-item-2.png" alt="">
+            <div class="content">
+                <h3>cart item 02</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/cart-item-3.png" alt="">
+            <div class="content">
+                <h3>cart item 03</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/cart-item-4.png" alt="">
+            <div class="content">
+                <h3>cart item 04</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <a href="#" class="btn">checkout now</a>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>fresh coffee in the morning</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat labore, sint cupiditate distinctio tempora reiciendis.</p>
+        <a href="#" class="btn">get yours now</a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span>about</span> us </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/about-img.jpeg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>what makes our coffee special?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui ea ullam, enim tempora ipsum fuga alias quae ratione a officiis id temporibus autem? Quod nemo facilis cupiditate. Ex, vel?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit amet enim quod veritatis, nihil voluptas culpa! Neque consectetur obcaecati sapiente?</p>
+            <a href="#" class="btn">learn more</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- menu section starts  -->
+
+<section class="menu" id="menu">
+
+    <h1 class="heading"> our <span>menu</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/menu-1.png" alt="">
+            <h3>tasty and healty</h3>
+            <div class="price">$15.99 <span>20.99</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="images/menu-2.png" alt="">
+            <h3>tasty and healty</h3>
+            <div class="price">$15.99 <span>20.99</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="images/menu-3.png" alt="">
+            <h3>tasty and healty</h3>
+            <div class="price">$15.99 <span>20.99</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="images/menu-4.png" alt="">
+            <h3>tasty and healty</h3>
+            <div class="price">$15.99 <span>20.99</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="images/menu-5.png" alt="">
+            <h3>tasty and healty</h3>
+            <div class="price">$15.99 <span>20.99</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="images/menu-6.png" alt="">
+            <h3>tasty and healty</h3>
+            <div class="price">$15.99 <span>20.99</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- menu section ends -->
+
+<section class="products" id="products">
+
+    <h1 class="heading"> our <span>products</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="images/product-1.png" alt="">
+            </div>
+            <div class="content">
+                <h3>fresh coffee</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">$15.99 <span>$20.99</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="images/product-2.png" alt="">
+            </div>
+            <div class="content">
+                <h3>fresh coffee</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">$15.99 <span>$20.99</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="images/product-3.png" alt="">
+            </div>
+            <div class="content">
+                <h3>fresh coffee</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">$15.99 <span>$20.99</span></div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading"> customer's <span>review</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/quote-img.png" alt="" class="quote">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
+            <img src="images/pic-1.png" class="user" alt="">
+            <h3>john deo</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/quote-img.png" alt="" class="quote">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
+            <img src="images/pic-2.png" class="user" alt="">
+            <h3>john deo</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+        
+        <div class="box">
+            <img src="images/quote-img.png" alt="" class="quote">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
+            <img src="images/pic-3.png" class="user" alt="">
+            <h3>john deo</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span>contact</span> us </h1>
+
+    <div class="row">
+
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30153.788252261566!2d72.82321484621745!3d19.141690214227783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1629452077891!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+
+        <form action="">
+            <h3>get in touch</h3>
+            <div class="inputBox">
+                <span class="fas fa-user"></span>
+                <input type="text" placeholder="name">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-envelope"></span>
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-phone"></span>
+                <input type="number" placeholder="number">
+            </div>
+            <input type="submit" value="contact now" class="btn">
+        </form>
+
+    </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> our <span>blogs</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="images/blog-1.jpeg" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">tasty and refreshing coffee</a>
+                <span>by admin / 21st may, 2021</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/blog-2.jpeg" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">tasty and refreshing coffee</a>
+                <span>by admin / 21st may, 2021</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/blog-3.jpeg" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">tasty and refreshing coffee</a>
+                <span>by admin / 21st may, 2021</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+    </div>
+
+    <div class="links">
+        <a href="#">home</a>
+        <a href="#">about</a>
+        <a href="#">menu</a>
+        <a href="#">products</a>
+        <a href="#">review</a>
+        <a href="#">contact</a>
+        <a href="#">blogs</a>
+    </div>
+
+    <div class="credit">created by <span>Khurram Shehzad Ahmad</span> | all rights reserved</div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
